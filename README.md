@@ -10,7 +10,7 @@
   - **user-service** (Coming Soon & TBD)
     - Purpose: To store user login data and current listening song. The user info is needed for the websocket bonus task
   - **Gateway** (Coming soon & TBD - will extend the project scope)
-    - Purpose: To have a single endpoint for the client to access the above to services
+    - Purpose: To have a single endpoint for the client to access the above two services
   - **Socket-Service** (Coming Soon & TBD)
     - Purpose: Service to get the current songs that are listened by the users
   - **Web SPA in React Redux** (Coming Soon - UI for Searching and listening to songs)
