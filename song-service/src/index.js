@@ -1,9 +1,7 @@
 // Libraries or external pacakges
 const express = require("express");
-
 const axios = require("axios");
-var fs = require("fs");
-
+const bodyParser = require("body-parser");
 // Custom modules
 const config = require("./config");
 const helpers = require("./helpers");
@@ -12,8 +10,23 @@ const helpers = require("./helpers");
 const app = express();
 const PORT = config.PORT;
 const NODE_ENV = config.NODE_ENV;
-let useItunesOpenAPI = true;
+const useItunesOpenAPI = true;
 const constants = require("./constants");
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// parse application/json
+app.use(bodyParser.json());
+// Middleware to log the request details
+app.use(function(req, res, next) {
+  console.log("\n\n=== Path ===");
+  console.log(req.path);
+  console.log("=== Params ===");
+  console.log(req.query);
+  console.log("\n\n"); // populated!
+  next();
+});
 
 // Purpose: Service to test check if the service is up and running
 app.get("/", (req, res) =>
