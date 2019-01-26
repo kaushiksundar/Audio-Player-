@@ -23,6 +23,8 @@
 
 ### Project setup and run
 
+From the project root run command
+
 ```sh
 yarn run boot
 ```
