@@ -1,0 +1,13 @@
+{
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "files.autoSave": "onFocusChange",
+  "workbench.sideBar.location": "left",
+  "workbench.colorTheme": "Night Owl",
+  "window.zoomLevel": 0,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "npm.enableScriptExplorer": true
+}

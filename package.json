@@ -1,0 +1,11 @@
+{
+  "name": "song-library",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "setup": "chmod 777 setup.sh && ./setup.sh",
+    "song-service": "cd song-service && yarn start",
+    "boot": "yarn run setup && yarn run song-service"
+  },
+  "license": "MIT"
+}
