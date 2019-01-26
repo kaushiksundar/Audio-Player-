@@ -20,6 +20,7 @@
     - Might dockererize
     - Need db for user service
     - Need to research on Websocket for bonus
+    - Right now only the songs (or) tracks have APIs. iTunes has Album -> Tracks and we could also get Artist info etc. More apis can be written depending on how we want to show in the UI.
 
 ### Project setup and run
 
